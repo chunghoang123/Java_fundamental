@@ -6,21 +6,17 @@ public class b4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Nhập dữ liệu
-        System.out.print("Nhập giá sách (USD): ");
+        System.out.print("Nhap gia sach (USD): ");
         double priceUSD = sc.nextDouble();
 
-        System.out.print("Nhập tỷ giá (VND): ");
+        System.out.print("Nhap ty gia (VND): ");
         float exchangeRate = sc.nextFloat();
 
-        // Tính tổng tiền VNĐ
         double totalVND = priceUSD * exchangeRate;
 
-        // Ép kiểu từ double sang long (lấy số tiền chẵn)
         long totalRounded = (long) totalVND;
 
-        // In kết quả
-        System.out.println("Tổng tiền VNĐ (double): " + totalVND);
-        System.out.println("Tổng tiền VNĐ sau khi ép kiểu (long): " + totalRounded);
+        System.out.println("Tong tien VND (double): " + totalVND);
+        System.out.println("Tong tien VND sau khi ep kieu (long): " + totalRounded);
     }
 }
