@@ -98,7 +98,7 @@ public class projectmini {
         System.out.print("Nhap mot so: ");
         int n = sc.nextInt();
         int first = n;
-        while (n != 1) {
+        while (n != 1&& n!=4) {
             int sum = 0;
             int temp = n;
 
