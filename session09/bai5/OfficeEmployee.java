@@ -1,5 +1,14 @@
 package bai5;
+public class OfficeEmployee extends Employee {
+    private double baseSalary;
 
-public class OfficeEmployee {
+    public OfficeEmployee(String name, double baseSalary) {
+        super(name);
+        this.baseSalary = baseSalary;
+    }
 
+    @Override
+    public double calculateSalary() {
+        return baseSalary;
+    }
 }
